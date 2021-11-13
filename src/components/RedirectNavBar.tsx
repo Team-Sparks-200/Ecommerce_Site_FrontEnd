@@ -1,10 +1,10 @@
 import React from "react";
 import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
 
-const NavBar: React.FC = () => {
+const RedirectNavBar: React.FC = () => {
   return (
     <Container fluid={true}>
-      <Navbar className="nav-bar px-0 py-3 border-bottom" expand="sm">
+      <Navbar className="nav-bar px-0 py-3 ps-5 border-bottom" expand="sm">
         <NavDropdown
           title="Categories"
           id="basic-nav-dropdown"
@@ -45,4 +45,4 @@ const NavBar: React.FC = () => {
   );
 };
 
-export default NavBar;
+export default RedirectNavBar;

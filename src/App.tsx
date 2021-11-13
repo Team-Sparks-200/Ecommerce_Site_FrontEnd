@@ -1,11 +1,9 @@
-import NavBar from "./components/NavBar";
+import RedirectNavBar from "./components/RedirectNavBar";
 
 function App() {
   return (
     <div>
-      ecommerce site
-      {/* <RedirectNavBar /> */}
-      <NavBar />
+      <RedirectNavBar />
     </div>
   );
 }
