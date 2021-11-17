@@ -1,0 +1,36 @@
+@import "variables";
+
+.banner-img {
+  width: 100vw;
+}
+
+.banner-text {
+  position: fixed;
+  right: 10%;
+  top: 22%;
+
+  .leaf{
+    width: 100px;
+  }
+
+  h4{
+    font-family: $banner-text-font;
+    font-weight: 500;
+    color: $banner-font-color;
+  }
+
+  h1{
+    font-family: $banner-h1-font;
+    color: $banner-h1-font-color;
+  }
+
+  Button{
+    background-color: $banner-btn-bg-color;
+    color: $banner-font-color;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    box-shadow: none;
+  }
+}
+

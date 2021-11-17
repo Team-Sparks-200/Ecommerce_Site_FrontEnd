@@ -1,10 +1,12 @@
 import React from 'react';
+import Banner from "./component/Banner";
+import {Container} from "react-bootstrap";
 
 function App() {
   return (
-    <div className="App">
-      ecommerce site
-    </div>
+    <Container fluid={true} className='px-0 '>
+      <Banner/>
+    </Container>
   );
 }
 
