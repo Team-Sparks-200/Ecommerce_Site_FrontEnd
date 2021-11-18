@@ -1,0 +1,41 @@
+@import "variables";
+
+.footer {
+  background-color: $footer-bg-color;
+  color: $footer-font-color;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+
+  h5{
+    font-weight: 400;
+    cursor: pointer;
+  }
+
+  .icon {
+    color: $footer-icons-bg-color;
+    font-size: xx-large;
+    cursor: pointer;
+  }
+
+  .copyright {
+    font-size: large;
+
+    span{
+      color: $footer-icons-font-color;
+    }
+  }
+
+  @media only screen and (max-width: $xs-screen-size) {
+    h5{
+      font-size: large;
+    }
+    .icon{
+      font-size: x-large;
+    }
+  }
+}
+
+.test {
+  background-color: aqua;
+}
