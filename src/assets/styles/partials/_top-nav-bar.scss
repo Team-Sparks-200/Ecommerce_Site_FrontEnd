@@ -1,0 +1,23 @@
+@import "variables";
+
+.top-nav-bar {
+ font-size: 1.2em;
+
+ .nav-links{
+  a.nav-link {
+   color: #575757;
+   margin-left: 20px;
+
+  }
+  a.phone-number{
+   color: #000000FF;
+   font-weight: 500;
+  }
+
+  .navbar-button{
+   background-color: transparent;
+   color: $logo-color;
+   border: 1px solid $logo-color;
+  }
+ }
+}
