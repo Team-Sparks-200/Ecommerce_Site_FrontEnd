@@ -4,7 +4,7 @@
   background-color: $footer-bg-color;
   color: $footer-font-color;
   width: 100%;
-  position: fixed;
+  position: static;
   bottom: 0;
 
   h5{
@@ -26,7 +26,7 @@
     }
   }
 
-  @media only screen and (max-width: $xs-screen-size) {
+  @media (max-width: $xs-screen-size) {
     h5{
       font-size: large;
     }
@@ -36,6 +36,3 @@
   }
 }
 
-.test {
-  background-color: aqua;
-}
