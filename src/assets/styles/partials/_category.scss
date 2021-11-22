@@ -1,0 +1,60 @@
+@import "variables";
+
+.category {
+
+  h2 {
+    color: $category-header-font-color;
+  }
+
+  .card {
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 10px;
+    width: 180px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .card-img {
+      width: 90%;
+      height: auto;
+      padding: 10px;
+      object-fit: contain;
+    }
+  }
+
+  .card:hover {
+    background-color: #a7ee75;
+  }
+
+  @media (max-width:$md-screen-size){
+    .card{
+      height: 150px;
+      margin: 10px;
+    }
+  }
+  @media (max-width:$xs-screen-size){
+    .card{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: 90%;
+      height: 50px;
+    }
+    .card-img{
+      display: none;
+    }
+
+    .card-title{
+      font-size: large;
+      font-weight: bold;
+      width: 100%;
+    }
+  }
+
+}
+
+
+
+
