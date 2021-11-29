@@ -1,4 +1,5 @@
 @import "../variables/mixins";
+@import "variables";
 
 .product-list{
    .product-bg {
@@ -77,4 +78,11 @@
    //      object-fit: contain;
    //   }
    //}
+}
+
+.react-numeric-input{
+   display: flex;
+   flex-direction: column;
+   color: $product-input-number-color;
+   width: 80px;
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import {Container, Row, Col} from "react-bootstrap";
+import {Container, Row} from "react-bootstrap";
 import Product from "./Product/Product";
 import CoconutImage from '../assets/images/Coconut.jpg';
 import CarrotImage from '../assets/images/Carrot.jpg';
