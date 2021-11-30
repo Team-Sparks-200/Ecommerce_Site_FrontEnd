@@ -2,29 +2,30 @@
 
 .banner-img {
   width: 100vw;
+  height: auto;
 }
 
 .banner-text {
   position: absolute;
   right: 10%;
-  top: 22%;
+  top: 40%;
 
-  .leaf{
+  .leaf {
     width: 100px;
   }
 
-  h4{
+  h4 {
     font-family: $banner-text-font;
     font-weight: 500;
     color: $banner-font-color;
   }
 
-  h1{
+  h1 {
     font-family: $banner-h1-font;
     color: $banner-h1-font-color;
   }
 
-  Button{
+  Button {
     background-color: $banner-btn-bg-color;
     color: $banner-font-color;
     border: none;
@@ -34,3 +35,41 @@
   }
 }
 
+@media (max-width: $md-screen-size) {
+  .banner-text {
+    position: absolute;
+    top: 17%;
+    left: 50%;
+
+    .leaf {
+      width: 70px;
+    }
+  }
+}
+
+@media (max-width: $xs-screen-size) {
+  .banner-text {
+    position: relative;
+    left: 45%;
+    top: -130px;
+
+    .leaf {
+      display: none;
+    }
+
+    h4 {
+      font-size: 16px;
+    }
+
+    h1 {
+      font-size: 19px;
+    }
+
+    Button {
+      font-size: small;
+    }
+  }
+  .banner {
+    height: 25vh;
+  }
+}

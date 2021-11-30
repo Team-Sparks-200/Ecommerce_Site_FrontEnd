@@ -5,14 +5,14 @@ import Leaf_Img from "../assets/images/double_leaf.webp"
 
 const Banner: React.FC = () => {
   return (
-      <Row className="px-0 mx-0">
+      <Row className="px-0 mx-0 banner">
         <Image src={Banner_Img} alt="Banner" className='px-0' />
         <Col xl={4} className='banner-text'>
           <Image src={Leaf_Img} alt="Leaf" className='leaf mb-3'/>
           <h4>100% Healthy & Affordable</h4>
           <h1>Organic Vegetables</h1>
           <h4>Small Chages Big Difference</h4>
-          <Button className='mt-2 px-3 py-2' variant="light">Shop Now</Button>
+          <Button className='mt-md-2 px-md-3 py-md-2' variant="light">Shop Now</Button>
         </Col>
       </Row>
   );
