@@ -1,0 +1,12 @@
+@import "../variables/variables";
+@import "../variables/mixins";
+
+.checkout-header {
+  color: $checkout-header-font-color;
+  font-weight: 500;
+}
+
+.checkout-container {
+  border: 1px solid $checkout-con-border-color;
+  border-radius: 5px;
+}
