@@ -7,15 +7,16 @@ import TopNavBar from "./component/TopNavBar";
 import CategoryDataList from "./datalist/CategoryDataList";
 import CategoryList from "./component/categoryList/CategoryList";
 import ProductList from "./component/ProductList";
-import CheckOutPage from "./component/checkout/CheckOutPage";
+import LogoNavBar from "./component/LogoNavBar"
 
 function App() {
 
-    const [category,setCategory] = useState(CategoryDataList);
+    const [category] = useState(CategoryDataList);
 
   return (
     <Container fluid={true} className='px-0 '>
       <TopNavBar/>
+      <LogoNavBar />
       <RedirectNavBar/>
       <Banner/>
       <CategoryList items={category}/>
