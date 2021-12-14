@@ -1,5 +1,5 @@
 @import "~bootstrap/scss/bootstrap";
-@import "partials/variables";
+@import "variables/variables";
 @import "partials/navbar";
 @import "partials/top-nav-bar";
 @import "partials/banner";
@@ -7,3 +7,5 @@
 @import "partials/category";
 @import "partials/product-list";
 @import "variables/mixins";
+@import "partials/checkout";
+@import "partials/quantityhandler";

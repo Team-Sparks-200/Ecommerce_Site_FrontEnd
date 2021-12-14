@@ -7,6 +7,7 @@ import TopNavBar from "./component/TopNavBar";
 import CategoryDataList from "./datalist/CategoryDataList";
 import CategoryList from "./component/categoryList/CategoryList";
 import ProductList from "./component/ProductList";
+import CheckOutPage from "./component/checkout/CheckOutPage";
 
 function App() {
 
