@@ -1,19 +1,32 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import {Col, Image, Row} from "react-bootstrap";
-import CarrotImage from "../../assets/images/Carrot.jpg"
 import QuantityHandler from "../common/QuantityHandler";
+import {ICheckOutItem} from "../types/Types";
 
-const CheckOutItem: React.FC = () => {
+type CheckOutItemProps = {
+  checkOutItem : ICheckOutItem,
+}
+
+const CheckOutItem: React.FC<CheckOutItemProps> = (props) => {
+
+  const {checkOutItem} = props;
+  const [totalPrice,setTotalPrice] = useState<number>(checkOutItem.quantity*checkOutItem.unit_price);
+  const [quantity, setQuantity] = useState<number>(checkOutItem.quantity);
+
+  useEffect(() => {
+
+  })
+
   return (
       <Row className="d-flex align-items-center">
         <Col>1</Col>
         <Col>
-          <Image src={CarrotImage}/>
+          <Image src={checkOutItem.image}/>
         </Col>
-        <Col>Carrot 1kg</Col>
-        <QuantityHandler/>
-        <Col> Rs. 999.99</Col>
-        <Col>Rs. 999,999.00</Col>
+        <Col>{checkOutItem.name}</Col>
+        <QuantityHandler quanityOfProduct={quantity}/>
+        <Col> Rs. {checkOutItem.unit_price}</Col>
+        <Col>Rs. {totalPrice}</Col>
       </Row>
   );
 };

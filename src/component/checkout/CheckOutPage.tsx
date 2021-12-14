@@ -2,9 +2,16 @@ import React from 'react';
 import TopNavBar from "../TopNavBar";
 import {Col, Container, Row} from "react-bootstrap";
 import CheckOutItem from "./CheckOutItem";
+import CarrotImage from "../../assets/images/Carrot.jpg"
 import LogoNavBar from "../LogoNavBar";
 
 const CheckOutPage: React.FC = () => {
+  const checkotProduct = {
+    image: CarrotImage,
+    name: "Carrot",
+    quantity: 3,
+    unit_price: 300
+  }
   return (
       <React.Fragment>
         <TopNavBar/>
@@ -15,7 +22,7 @@ const CheckOutPage: React.FC = () => {
           </Col>
         </Row>
         <Container className='checkout-container mt-1'>
-          <CheckOutItem/>
+          <CheckOutItem checkOutItem={checkotProduct}/>
         </Container>
       </React.Fragment>
   );
