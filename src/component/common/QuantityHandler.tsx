@@ -1,17 +1,22 @@
 import React, {useState} from 'react';
-import { HiOutlineMinusCircle, HiOutlinePlusCircle } from "react-icons/hi";
+import {HiOutlineMinusCircle, HiOutlinePlusCircle} from "react-icons/hi";
 import {Col} from "react-bootstrap";
 
-const QuantityHandler: React.FC = () => {
+type QuantityHandlerProps = {
+  quanityOfProduct: number
+}
 
-  let [quantity, setQuantity] = useState<number>(0);
+const QuantityHandler: React.FC<QuantityHandlerProps> = (props) => {
+
+  const {quanityOfProduct} = props;
+  let [quantity, setQuantity] = useState<number>(quanityOfProduct);
   const increaseQuantity = () => {
-    quantity+=1;
+    quantity += 1;
     setQuantity(quantity);
   }
 
   const decreaseQuantity = () => {
-    quantity-=1;
+    quantity -= 1;
     setQuantity(quantity);
   }
 
