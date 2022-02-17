@@ -1,16 +1,11 @@
 import React from "react";
 import {Row, Col, Button} from "react-bootstrap";
 import NumericInput from 'react-numeric-input';
+import {IProduct} from "../../datalist/Types";
 
 
 type ProductProps = {
-  item: {
-    id: number
-    name: string,
-    new_price: string,
-    old_price: string
-    image: string
-  }
+  item : IProduct
 }
 
 const Product: React.FC<ProductProps> = (props: ProductProps) => {
