@@ -1,15 +1,36 @@
-@import "variables";
+@import "src/assets/styles/variables/variables";
 
-.logo-nav-bar {
-
-  .shopping-cart {
-    color: #59b75c;
+  .checkout-btn {
+    background-color: $checkout-btn-bg-color;
+    color: $checkout-btn-txt-color;
+    border: none;
+    font-size: larger;
+    font-weight: lighter;
+    padding: 3px 20px;
+    border-radius: 5px;
   }
 
-  .navbar-button {
-    color: #59b75c;
+  .checkout-btn:hover{
+    background-color: $checkout-btn-txt-color;
+    color: $checkout-btn-bg-color;
+    border: 2px solid $checkout-btn-bg-color;
   }
-  img{
-    cursor: pointer;
+
+  .cart-icon{
+    color: $cart-icon-color;
+    font-size: xx-large;
   }
-}
+
+  .cart-quantity{
+    position: absolute;
+    top: 0;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    margin-left: 15px;
+    background-color: $checkout-btn-bg-color;
+    border-radius: 50%;
+    font-size: medium;
+    font-weight: bold;
+    color: $checkout-btn-txt-color;
+  }
