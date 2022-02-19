@@ -8,7 +8,6 @@ import ProductList from "./ProductList";
 import Footer from "./footer/Footer";
 import CategoryDataList from "../datalist/CategoryDataList";
 import {Container} from "react-bootstrap";
-import {Products} from "../datalist/Products";
 
 const Home: React.FC = () => {
   const [category] = useState(CategoryDataList);
@@ -20,7 +19,6 @@ const Home: React.FC = () => {
           <LogoNavBar/>
           <RedirectNavBar/>
           <Banner/>
-          {/*<Cart cartdata={null} item={Products[0]}/>*/}
           <CategoryList items={category}/>
           <ProductList/>
           <Footer/>

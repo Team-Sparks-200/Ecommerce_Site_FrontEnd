@@ -15,7 +15,3 @@ export interface ICartItem  {
   image: string,
   quantity: number
 }
-
-export interface ICart {
-  cart : ICartItem[]
-}

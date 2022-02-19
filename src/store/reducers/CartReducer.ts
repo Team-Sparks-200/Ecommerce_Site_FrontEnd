@@ -1,6 +1,5 @@
-import {ICart, ICartItem} from "../../datalist/Types";
+import {ICartItem} from "../../datalist/Types";
 import CoconutImage from "../../assets/images/Coconut.jpg";
-import {Products} from "../../datalist/Products";
 
 const initialState: ICartItem[] = [
   {
@@ -11,12 +10,19 @@ const initialState: ICartItem[] = [
     image : CoconutImage,
     quantity: 100
   },
-
+  {
+    id: 2,
+    name : "Coconut",
+    new_price : "65.00",
+    old_price : "60.00",
+    image : CoconutImage,
+    quantity: 100
+  },
 ]
 
-const CartReducer = (state:ICart = initialState, action : any) => {
+const CartReducer = (state:ICartItem[] = initialState, action : any) => {
 
-  let cart = state.cart;
+  let cart = state;
 
   switch (action.type) {
     case 'ADD_TO_CART':
