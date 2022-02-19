@@ -1,7 +1,7 @@
 import React from 'react';
 import {Col, Image, Row} from "react-bootstrap";
 import CarrotImage from "../../assets/images/Carrot.jpg"
-import QuantityHandler from "../common/QuantityHandler";
+import QuantityHandler from "../Common/QuantityHandler";
 
 const CheckOutItem: React.FC = () => {
   return (

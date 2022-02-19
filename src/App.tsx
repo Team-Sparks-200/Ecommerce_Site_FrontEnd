@@ -1,10 +1,10 @@
 import React from 'react';
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
-import CheckOutPage from "./component/checkout/CheckOutPage";
+import CheckOutPage from "./component/CheckOut/CheckOutPage";
 import Home from "./component/Home";
 import AboutUs from "./component/OtherPages/AboutUs";
 import Faq from "./component/OtherPages/Faq";
-import Cart from "./component/cart/Cart";
+import ContactUs from "./component/OtherPages/ContactUs";
 
 function App() {
   return (
@@ -23,7 +23,7 @@ function App() {
                 <Faq/>
             )}/>
             <Route exact path='/contact' render={() => (
-                <Cart/>
+                <ContactUs/>
             )}/>
           </Switch>
         </Router>

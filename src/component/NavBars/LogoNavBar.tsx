@@ -1,7 +1,7 @@
 import React from "react";
 import {Button, Container, Col, Row, Nav, Navbar} from "react-bootstrap";
 import {TiShoppingCart} from "react-icons/all"
-import LogoSparks from "../assets/images/logo_image/LogoSparks.webp";
+import LogoSparks from "../../assets/images/logo_image/LogoSparks.webp";
 import {Link} from "react-router-dom";
 
 const LogoNavBar: React.FC = () => {

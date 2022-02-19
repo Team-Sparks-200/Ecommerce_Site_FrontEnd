@@ -1,13 +1,14 @@
 import React, {useState} from 'react';
-import TopNavBar from "./TopNavBar";
-import LogoNavBar from "./LogoNavBar";
-import RedirectNavBar from "./RedirectNavBar";
-import Banner from "./Banner";
-import CategoryList from "./categoryList/CategoryList";
-import ProductList from "./ProductList";
-import Footer from "./footer/Footer";
+import TopNavBar from "./NavBars/TopNavBar";
+import LogoNavBar from "./NavBars/LogoNavBar";
+import RedirectNavBar from "./NavBars/RedirectNavBar";
+import Banner from "./Banner/Banner";
+import CategoryList from "./CategoryList/CategoryList";
+import ProductList from "./Product/ProductList";
+import Footer from "./Footer/Footer";
 import CategoryDataList from "../datalist/CategoryDataList";
 import {Container} from "react-bootstrap";
+import Cart from "./Cart/Cart";
 
 const Home: React.FC = () => {
   const [category] = useState(CategoryDataList);
@@ -19,6 +20,7 @@ const Home: React.FC = () => {
           <LogoNavBar/>
           <RedirectNavBar/>
           <Banner/>
+          <Cart/>
           <CategoryList items={category}/>
           <ProductList/>
           <Footer/>

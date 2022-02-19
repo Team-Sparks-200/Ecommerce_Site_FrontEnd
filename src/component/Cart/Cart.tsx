@@ -1,7 +1,7 @@
 import React from 'react';
-import CartItem from "./CartItem";
 import {connect} from "react-redux";
 import {ICartItem} from "../../datalist/Types";
+import CartItem from "./CartItem";
 
 type CartProps = {
   cart: ICartItem[]

@@ -1,9 +1,9 @@
 import React from 'react';
 import {Col, Row} from "react-bootstrap";
-import RedirectNavBar from "../RedirectNavBar";
-import LogoNavBar from "../LogoNavBar";
-import TopNavBar from "../TopNavBar";
-import Footer from "../footer/Footer";
+import RedirectNavBar from "../NavBars/RedirectNavBar";
+import LogoNavBar from "../NavBars/LogoNavBar";
+import TopNavBar from "../NavBars/TopNavBar";
+import Footer from "../Footer/Footer";
 
 const ContactUs: React.FC = () => {
   return (

@@ -1,7 +1,7 @@
 import React from 'react';
 import {Row, Image, Button,Col} from "react-bootstrap";
-import Banner_Img from "../assets/images/Bannner_Img.webp";
-import Leaf_Img from "../assets/images/double_leaf.webp"
+import Banner_Img from "../../assets/images/Bannner_Img.webp";
+import Leaf_Img from "../../assets/images/double_leaf.webp"
 
 const Banner: React.FC = () => {
   return (

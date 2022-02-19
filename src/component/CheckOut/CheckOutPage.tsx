@@ -1,8 +1,8 @@
 import React from 'react';
-import TopNavBar from "../TopNavBar";
+import TopNavBar from "../NavBars/TopNavBar";
 import {Col, Container, Row} from "react-bootstrap";
 import CheckOutItem from "./CheckOutItem";
-import LogoNavBar from "../LogoNavBar";
+import LogoNavBar from "../NavBars/LogoNavBar";
 
 const CheckOutPage: React.FC = () => {
   return (

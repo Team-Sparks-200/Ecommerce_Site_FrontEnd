@@ -2,6 +2,7 @@ import React, {ChangeEvent, FormEvent, useState} from 'react';
 import {connect} from "react-redux";
 import {removeFromCart, updateCartQuantity} from "../../store/action/CartAction";
 import {ICartItem, IProduct} from "../../datalist/Types";
+import {Dispatch} from "redux";
 
 type CartItemProps = {
   item: ICartItem
@@ -74,7 +75,7 @@ const CartItem: React.FC<CartItemProps> = (props) => {
             );
           };
 
-            const mapDispatchToProps = (dispatch: any) => {
+            const mapDispatchToProps = (dispatch: Dispatch) => {
 
             return {
             updateCartQuantity: (productId : IProduct['id'], quantity: number) => dispatch(updateCartQuantity(productId, quantity)),
