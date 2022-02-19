@@ -1,30 +1,29 @@
 import React from 'react';
 import CartItem from "./CartItem";
 import {connect} from "react-redux";
-import {IProduct} from "../../datalist/Types";
+import {ICart, ICartItem, IProduct} from "../../datalist/Types";
+// import {IProduct} from "../../datalist/Types";
 type CartProps = {
-  cart: any
-  item: IProduct[]
+  cart: ICart
 }
 
 const Cart: React.FC<CartProps> = (props) => {
-  const {cart,item} = props;
+  const {cart} = props;
   let total = 0;
+  const cartItems = cart.cart.length > 0 ? (
 
-      cart.map(item => total += item.product.price * item.quantity);
-      const cart = cart.length > 0 ? (
       <div>
         <div className="panel-body">
           {
-            props.cart.map((item: { product: { id: React.Key | null | undefined; }; }) => {
-              return (
-                  <div key={item.product.id}>
-                    <CartItem Item={item}/>
-                    <hr/>
-                  </div>
-              )
-            })
-          }
+              cart.cart.map((item:ICartItem, index: number) =>{
+                return (
+                    <div key={item.id}>
+                      <CartItem item={item}/>
+                      <hr/>
+                    </div>
+                )
+
+              })}
         </div>
         <div className="panel-footer">
           <div className="row text-center">
@@ -68,7 +67,7 @@ const Cart: React.FC<CartProps> = (props) => {
 
 }
 ;
-const mapStateToProps = (state) => {
+const mapStateToProps = (state: any) => {
 
   return {
     cart: state.cart.cart

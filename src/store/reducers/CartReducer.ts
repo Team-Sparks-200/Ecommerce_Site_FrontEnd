@@ -1,10 +1,20 @@
-import {Cart} from "../../datalist/Types";
+import {ICart, ICartItem} from "../../datalist/Types";
+import CoconutImage from "../../assets/images/Coconut.jpg";
+import {Products} from "../../datalist/Products";
 
-const initialState: Cart = {
-  cart: []
-}
+const initialState: ICartItem[] = [
+  {
+    id: 1,
+    name : "Coconut",
+    new_price : "65.00",
+    old_price : "60.00",
+    image : CoconutImage,
+    quantity: 100
+  },
 
-const CartReducer = (state = initialState, action : any) => {
+]
+
+const CartReducer = (state:ICart = initialState, action : any) => {
 
   let cart = state.cart;
 

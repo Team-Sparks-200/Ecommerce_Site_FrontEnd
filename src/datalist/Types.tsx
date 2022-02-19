@@ -5,9 +5,17 @@ export interface IProduct
   new_price:string,
   old_price:string
   image: string
+}
+
+export interface ICartItem  {
+  id: number
+  name: string,
+  new_price:string,
+  old_price:string,
+  image: string,
   quantity: number
 }
 
-export type Cart = {
-  cart : IProduct[]
+export interface ICart {
+  cart : ICartItem[]
 }

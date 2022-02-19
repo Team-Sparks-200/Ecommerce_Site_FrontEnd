@@ -4,9 +4,12 @@ import CheckOutPage from "./component/checkout/CheckOutPage";
 import Home from "./component/Home";
 import AboutUs from "./component/OtherPages/AboutUs";
 import Faq from "./component/OtherPages/Faq";
-import ContactUs from "./component/OtherPages/ContactUs";
-import Cart from "./component/cart/Cart";
+// import ContactUs from "./component/OtherPages/ContactUs";
+// import Cart from "./component/cart/Cart";
+// import {Products} from "./datalist/Products";
+import CartItem from "./component/cart/CartItem";
 import {Products} from "./datalist/Products";
+import Cart from "./component/cart/Cart";
 
 function App() {
   return (
@@ -25,7 +28,7 @@ function App() {
                 <Faq/>
             )}/>
             <Route exact path='/contact' render={() => (
-                <Cart item={Products}/>
+                <Cart />
             )}/>
           </Switch>
         </Router>
