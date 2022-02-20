@@ -3,17 +3,12 @@ import {Container, Row} from "react-bootstrap";
 import Product from "./Product";
 import {Products} from "../../datalist/Products";
 import {addToCart} from "../../store/action/CartAction";
-import {IProduct} from "../../datalist/Types";
-import {connect} from "react-redux";
-import {Dispatch} from "redux";
+import {useDispatch, useSelector} from "react-redux";
 
+const ProductList: React.FC = (props) => {
 
-
-const ProductList: React.FC = () => {
-
-  const addToCart = (product: IProduct) => {
-
-  }
+  const cart = useSelector((state) => state)
+  const dispatch = useDispatch();
 
   return (
       <Container fluid={true}>
@@ -23,7 +18,7 @@ const ProductList: React.FC = () => {
                 <Product
                     key={product.id}
                     item={product}
-                    addToCart={}
+                    addToCart={() => dispatch(addToCart(product))}
                 />
             )
           })}
@@ -31,21 +26,5 @@ const ProductList: React.FC = () => {
       </Container>
   );
 }
-const mapStateToProps = (state: any) => {
 
-  return {
-    products: state.product.products,
-    cart: state.cart.cart
-  }
-};
-
-const mapDispatchToProps = (dispatch : Dispatch) => {
-  return {
-    addToCart: (product:IProduct) => {
-      dispatch(addToCart(product));
-    }
-  }
-};
-
-
-export default connect(mapStateToProps, mapDispatchToProps)(ProductList);
+export default ProductList;
